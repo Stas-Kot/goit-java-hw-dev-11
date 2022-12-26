@@ -47,8 +47,8 @@ public class App {
 //        Planet jupi = planetCrudService.getById("JUPI");
 //        System.out.println("jupi = " + jupi);
 
-//        List<Planet> planets = planetCrudService.getAll();
-//        System.out.println("planets = " + planets);
+        List<Planet> planets = planetCrudService.getAll();
+        System.out.println("planets = " + planets);
 
 //        long newTicketId = ticketCrudService.create(client11, jupi, jupi);
 //        System.out.println("newTicketId = " + newTicketId);
@@ -70,10 +70,10 @@ public class App {
 //        Planet andro = planetCrudService.getById("ANDRO");
 //        ticketCrudService.updateToById(12L, andro);
 
-        Ticket ticket12 = ticketCrudService.getById(12L);
-        System.out.println("ticket12client = " + ticket12.getClient());
-        System.out.println("ticket12from = " + ticket12.getFrom());
-        System.out.println("ticket12to = " + ticket12.getTo());
+//        Ticket ticket12 = ticketCrudService.getById(12L);
+//        System.out.println("ticket12client = " + ticket12.getClient());
+//        System.out.println("ticket12from = " + ticket12.getFrom());
+//        System.out.println("ticket12to = " + ticket12.getTo());
 
         session.close();
     }

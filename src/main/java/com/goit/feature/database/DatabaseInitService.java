@@ -6,7 +6,6 @@ import org.flywaydb.core.Flyway;
 public class DatabaseInitService {
     public void initDb() {
         String connectionUrl = new Prefs().getPref(Prefs.DB_JDBC_CONNECTION_URL);
-        System.out.println("connectionUrl = " + connectionUrl);
 
         Flyway flyway = Flyway
                 .configure()
